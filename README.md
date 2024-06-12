@@ -26,3 +26,26 @@ Sonarcloud will start scanning your selected repository and provide the results 
 ![image](https://github.com/Catheren/Integrating-Sonarcloud-with-Github-Actions/assets/94724571/cba20fc3-86a9-422b-a40d-504dac809cda)
 And every single time a code commit is made, it will rescan the code to find any new vulnerabilities.
 
+# Integrating Sonarcloud with JIRA for ticket management
+Jira is a project management tool developed by Atlassian. It's particularly popular for Agile project management, but can be used for various project types. 
+To integrate JIRA with Sonarcloud so that tickets can be automatically created and assigned to Developers based on the issues on code.
+To do this, 
+1. Go to JIRA console. Select **Apps**.
+2. Select **Explore more apps**. Search for SonarQube connector in the search bar.
+![image](https://github.com/Catheren/Integrating-Sonarcloud-with-Github-Actions/assets/94724571/35c74cda-300c-4f6d-84e1-5c23c08a98b0)
+3. Once Sonarqube connector is added, select **Manage App**.
+![image](https://github.com/Catheren/Integrating-Sonarcloud-with-Github-Actions/assets/94724571/4e07345f-7a1f-483d-8e5c-d4ff864e0d89)
+
+5. Select **SonarQube connector** to manage the global settings of Sonarqube connector.
+6. Enter the required information.
+7. To get the token, go to Sonarcloud page and select **Settings>Security**.
+8. Generate tokens and copy the token and paste on JIRA.
+9. To provide the Resource Key, go to Sonarcloud portal, select the desired project.
+    - Go to **Administration>Update Key**. Copy the project key and paste it.
+11. Click **Save**.
+Now, we will be able to see the SonarQube tab on our project.
+And we can see the information on Sonarcloud is reflected on the project. 
+Compare the following images.
+![image](https://github.com/Catheren/Integrating-Sonarcloud-with-Github-Actions/assets/94724571/8f911b82-2d5a-42bd-8db2-34f224a4e2d0)
+![image](https://github.com/Catheren/Integrating-Sonarcloud-with-Github-Actions/assets/94724571/1202d189-b96b-47e8-920a-40534587ba20)
+You can now assign tasks and tickets to the corresponding developers so that code vulnerabilities can be mitigated.
